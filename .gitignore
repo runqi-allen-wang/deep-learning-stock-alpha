@@ -1,0 +1,38 @@
+# Python cache/build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Virtual environments and local config
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Jupyter / OS files
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Experiment outputs and logs
+experiments/
+outputs/
+runs/
+smoke_test_output/
+*.log
+
+# Model checkpoints / large generated artifacts
+*.pt
+*.pth
+*.ckpt
+
+# Raw data: download manually from Kaggle and keep it out of git
+data/raw/*.csv
+!data/raw/.gitkeep
