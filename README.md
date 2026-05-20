@@ -6,6 +6,10 @@ The goal is not to claim a tradable arbitrage strategy. This repository is inten
 
 > **Disclaimer.** This project is for educational and research purposes only. It is not financial advice and should not be used as a live trading system without substantial additional validation.
 
+## Project paper
+
+A short project paper is available here: [deep-learning-stock-alpha.pdf](deep-learning-stock-alpha.pdf).
+
 ## Main features
 
 - Converts price prediction into **cross-sectional stock ranking**.
@@ -20,6 +24,7 @@ The goal is not to claim a tradable arbitrage strategy. This repository is inten
 ```text
 .
 ├── README.md
+├── deep-learning-stock-alpha.pdf  # project paper for reading
 ├── LICENSE
 ├── requirements.txt
 ├── data/
