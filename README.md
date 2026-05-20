@@ -127,38 +127,6 @@ Check whether PyTorch can see a GPU:
 python src/check_gpu.py
 ```
 
-## Minimal smoke test
-
-This command should run on CPU and finish much faster than the full experiment:
-
-```bash
-python src/train_alpha.py \
-  --source local \
-  --csv-path data/raw/all_stocks_5yr.csv \
-  --preset smoke \
-  --models mlp \
-  --trials 1 \
-  --epochs 1 \
-  --device cpu \
-  --max-tickers 20 \
-  --min-rows 300 \
-  --batch-size 512 \
-  --output-dir smoke_test_output
-```
-
-Expected key outputs:
-
-```text
-smoke_test_output/
-├── trials.csv
-├── best_by_model.csv
-├── model_comparison.csv
-├── cost_sensitivity.csv
-├── model_comparison_latex.tex
-└── figures/
-    └── best_by_model_equity_curve.png
-```
-
 ## Recommended final experiment
 
 Use `--device auto` for portability. If CUDA is available and PyTorch is installed with CUDA support, you can change it to `--device cuda --amp`.
