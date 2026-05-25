@@ -1,4 +1,4 @@
-# Deep Learning Quant Alpha Project
+# Deep Sequential Models for Cross-Sectional Stock Selection
 
 A course-project-ready deep learning alpha research pipeline for **cross-sectional stock selection** on S&P 500 daily OHLCV data.
 
