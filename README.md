@@ -38,8 +38,10 @@ The following table summarizes the cross-sectional stock selection results over 
 
 Example Images:
 <p align="center">
-  <img src="figures/best_by_model_equity_curve.png" alt="Best equity curve by model" width="48%">
-  <img src="figures/best_equity_curve.png" alt="Best selected strategy equity curve" width="48%">
+  <img src="figures/best_by_model_equity_curve.png" alt="Best equity curve by model" width="88%">
+</p>
+<p align="center">
+  <img src="figures/best_equity_curve.png" alt="Best selected strategy equity curve" width="88%">
 </p>
 
 
