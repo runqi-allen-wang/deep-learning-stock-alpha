@@ -9,6 +9,7 @@ The goal is not to claim a tradable arbitrage strategy. This repository is inten
 ## Project paper
 
 A short project paper is available here: [deep-learning-stock-alpha.pdf](deep-learning-stock-alpha.pdf).
+
 A presentation beamer-based PDF is available here: [StockDL_ppt_en.pdf](StockDL_ppt_en.pdf).
 
 
