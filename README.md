@@ -36,6 +36,7 @@ The following table summarizes the cross-sectional stock selection results over 
 | ResMLP | $0.0395\pm0.0176$ | $17.22\%\pm2.21\%$ | $-0.04\%\pm2.21\%$ | $1.23\%\pm2.72\%$ | $2.9712\pm0.4244$ | $0.3452\pm0.1156$ |
 | TCN | $0.0311\pm0.0101$ | $22.71\%\pm8.35\%$ | $5.46\%\pm8.35\%$ | $\mathbf{11.54\%\pm11.67\%}$ | $3.0431\pm1.1644$ | $0.2364\pm0.0281$ |
 
+Example Images:
 <p align="center">
   <img src="figures/best_by_model_equity_curve.png" alt="Best equity curve by model" width="48%">
   <img src="figures/best_equity_curve.png" alt="Best selected strategy equity curve" width="48%">
