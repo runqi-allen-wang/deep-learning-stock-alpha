@@ -9,7 +9,9 @@ The goal is not to claim a tradable arbitrage strategy. This repository is inten
 ## Project paper
 
 A short project paper is available here: [deep-learning-stock-alpha.pdf](deep-learning-stock-alpha.pdf).
-A presentation beamer-based PDF is available here: [ppt](StockDL_ppt_en.pdf).
+A presentation beamer-based PDF is available here: [StockDL_ppt_en.pdf](StockDL_ppt_en.pdf).
+
+
 
 ## Main features
 
@@ -20,14 +22,38 @@ A presentation beamer-based PDF is available here: [ppt](StockDL_ppt_en.pdf).
 - Supports score smoothing, equal-weight and inverse-volatility portfolios, and simple model ensembles.
 - Provides a multi-seed runner with aggregated report tables.
 
+## Main results
+
+The following table summarizes the cross-sectional stock selection results over three random seeds. All portfolio returns are net of 5 bps transaction costs. The equal-weight buy-and-hold benchmark return is **17.25%**, and its Sharpe ratio is **4.0497**.
+
+| Model | Test IC | Long-only return | Excess return | Long-short return | Sharpe | Turnover |
+|---|---:|---:|---:|---:|---:|---:|
+| DLinear | $0.0234\pm0.0107$ | $9.83\%\pm9.05\%$ | $-7.42\%\pm9.05\%$ | $-0.23\%\pm13.62\%$ | $1.4826\pm1.3715$ | $0.2218\pm0.0343$ |
+| Ensemble | $\mathbf{0.0512\pm0.0180}$ | $18.25\%\pm7.76\%$ | $1.00\%\pm7.76\%$ | $5.30\%\pm4.68\%$ | $2.0211\pm0.8886$ | $0.2087\pm0.0573$ |
+| GRU | $0.0270\pm0.0441$ | $21.51\%\pm10.28\%$ | $4.25\%\pm10.28\%$ | $2.70\%\pm11.69\%$ | $\mathbf{3.5275\pm1.7344}$ | $\mathbf{0.1057\pm0.0399}$ |
+| LSTM | $0.0272\pm0.0134$ | $19.66\%\pm6.13\%$ | $2.40\%\pm6.13\%$ | $0.30\%\pm7.90\%$ | $3.1604\pm1.2997$ | $0.1201\pm0.0806$ |
+| PatchTST | $0.0496\pm0.0108$ | $\mathbf{25.42\%\pm4.68\%}$ | $\mathbf{8.17\%\pm4.68\%}$ | $6.85\%\pm16.47\%$ | $3.3560\pm0.5511$ | $0.1945\pm0.0695$ |
+| ResMLP | $0.0395\pm0.0176$ | $17.22\%\pm2.21\%$ | $-0.04\%\pm2.21\%$ | $1.23\%\pm2.72\%$ | $2.9712\pm0.4244$ | $0.3452\pm0.1156$ |
+| TCN | $0.0311\pm0.0101$ | $22.71\%\pm8.35\%$ | $5.46\%\pm8.35\%$ | $\mathbf{11.54\%\pm11.67\%}$ | $3.0431\pm1.1644$ | $0.2364\pm0.0281$ |
+
+<p align="center">
+  <img src="figures/best_by_model_equity_curve.png" alt="Best equity curve by model" width="48%">
+  <img src="figures/best_equity_curve.png" alt="Best selected strategy equity curve" width="48%">
+</p>
+
+
 ## Repository structure
 
 ```text
 .
 ├── README.md
 ├── deep-learning-stock-alpha.pdf  # project paper for reading
+├── StockDL_ppt_en.pdf             # presentation slides
 ├── LICENSE
 ├── requirements.txt
+├── figures/
+│   ├── best_by_model_equity_curve.png
+│   └── best_equity_curve.png
 ├── data/
 │   └── raw/
 │       └── .gitkeep              # put all_stocks_5yr.csv here after downloading from Kaggle
